@@ -17,7 +17,7 @@
   br = branch
   cm = commit -m
   st = status
-
+  ls = ls-tree --full-tree -r --name-only HEAD
 
  
   ba = branch --all
