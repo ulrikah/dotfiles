@@ -21,4 +21,4 @@
 
  
   ba = branch --all
-  ac = '!git add -A && git commit -m $1'
+  ca = !git add -A && git commit -av
