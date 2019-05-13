@@ -8,6 +8,7 @@ alias vpnd="/opt/cisco/anyconnect/bin/vpn disconnect"
 # lr:  Full Recursive Directory Listing
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 alias ls..='ls ..'
+alias la='ls -ar'
 alias cl='clear'
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 alias ..='cd ../'                           # Go back 1 directory level
