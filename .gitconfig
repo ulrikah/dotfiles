@@ -1,0 +1,24 @@
+# This is Git's per-user configuration file.
+[user]
+	name = ulrikah
+	email = ulrikhalmoy@gmail.com
+
+[credential]
+    helper = osxkeychain
+
+
+[alias]
+  # "Long" Logs - render's the log with high signal and low noise
+  ll = log \
+  --graph \
+  --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an - %cr)' \
+  --date=relative
+  co = checkout
+  br = branch
+  cm = commit -m
+  st = status
+
+
+ 
+  ba = branch --all
+  ac = '!git add -A && git commit -m $1'
