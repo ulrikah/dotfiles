@@ -5,3 +5,8 @@ mkcd()
         mkdir -p -- "$1" &&
                   cd -P -- "$1"
 }
+
+cd()
+{
+	builtin cd "$@" && ls -U |head -5
+}
