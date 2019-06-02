@@ -6,7 +6,7 @@ export PATH=$HOME/Library/Haskell/bin:$PATH
 
 # load the shell dotfiles
 # remember to not use space between filenames
-for file in ~/.{aliases,functions}; do
+for file in ~/dotfiles/.{aliases,functions}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 

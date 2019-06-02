@@ -7,6 +7,7 @@ alias vpnd="/opt/cisco/anyconnect/bin/vpn disconnect"
 alias myip='curl ifconfig.co' # append -6 or -4 for IPv6 / IPv4
 alias brssh='ssh ulrik@165.227.128.215'
 alias ntnu='ssh -X -C ulrikah@login.stud.ntnu.no' # vpn is a prerequisite
+alias pyserv='python -m http.server'
 
 # navigation
 # lr:  Full Recursive Directory Listing
@@ -22,6 +23,7 @@ alias .3='cd ../../../'                     # Go back 3 directory levels
 alias .4='cd ../../../../'                  # Go back 4 directory levels
 alias .5='cd ../../../../../'               # Go back 5 directory levels
 alias .6='cd ../../../../../../'            # Go back 6 directory levels
+alias du='du -h' # default flag is human readable
 
 alias python=python3
 alias pip=pip3
@@ -33,13 +35,16 @@ alias src='source'
 alias md='macdown'
 
 # dotfiles
-alias brc='vim ~/.bashrc'
-alias bpr='vim ~/.bash_profile'
-alias als='vim ~/.aliases'
-alias func='vim ~/.functions'
+alias brc='vim ~/dotfiles/.bashrc'
+alias sbrc='source ~/dotfiles/.bashrc'
+alias sbpr='source ~/dotfiles/.bash_profile'
+alias bpr='vim ~/dotfiles/.bash_profile'
+alias als='vim ~/dotfiles/.aliases'
+alias func='vim ~/dotfiles/.functions'
 
-# get week number
+# misc
 alias week='date +%V'
+alias weather='curl -s wttr.in | sed -n "1,7p"'
 
 # show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
