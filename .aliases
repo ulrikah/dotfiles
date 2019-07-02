@@ -5,9 +5,12 @@ alias chrome="open -a 'Google Chrome.app' --args --disable-web-security"
 alias vpn="/opt/cisco/anyconnect/bin/vpn connect vpn.ntnu.no"
 alias vpnd="/opt/cisco/anyconnect/bin/vpn disconnect"
 alias myip='curl ifconfig.co' # append -6 or -4 for IPv6 / IPv4
+alias localip='ipconfig getifaddr en0'
 alias brssh='ssh ulrik@165.227.128.215'
 alias ntnu='ssh -X -C ulrikah@login.stud.ntnu.no' # vpn is a prerequisite
-alias pyserv='python -m http.server'
+alias pyserv='open http://localhost:8000 && python -m http.server' 
+alias pyvenv='python3.7 -m venv'
+alias du='du -h' # default flag is human readable
 
 # navigation
 # lr:  Full Recursive Directory Listing
@@ -17,13 +20,15 @@ alias la='ls -ar'
 alias cl='clear'
 alias g='git'
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
+alias -- -='cd -'
 alias ..='cd ../'                           # Go back 1 directory level
 alias ...='cd ../../'                       # Go back 2 directory levels
 alias .3='cd ../../../'                     # Go back 3 directory levels
 alias .4='cd ../../../../'                  # Go back 4 directory levels
 alias .5='cd ../../../../../'               # Go back 5 directory levels
 alias .6='cd ../../../../../../'            # Go back 6 directory levels
-alias du='du -h' # default flag is human readable
+alias prog='cd ~/programming'
+alias bl='cd ~/blank'
 
 alias python=python3
 alias pip=pip3
@@ -35,6 +40,8 @@ alias src='source'
 alias md='macdown'
 
 # dotfiles
+alias dotfiles='cd ~/dotfiles'
+alias dots='cd ~/dotfiles'
 alias brc='vim ~/dotfiles/.bashrc'
 alias sbrc='source ~/dotfiles/.bashrc'
 alias sbpr='source ~/dotfiles/.bash_profile'

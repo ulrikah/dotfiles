@@ -15,6 +15,8 @@
   --date=relative
   co = checkout
   br = branch
+  pu = push	
+  pl = pull
   cm = commit -m
   st = status
   ls = ls-tree --full-tree -r --name-only HEAD

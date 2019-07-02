@@ -6,6 +6,7 @@ mkcd()
                   cd -P -- "$1"
 }
 
+# cd does auto 'ls' with top five elements
 cd()
 {
 	builtin cd "$@" && ls -U |head -5
