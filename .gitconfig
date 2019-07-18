@@ -17,10 +17,13 @@
   br = branch
   pu = push	
   pl = pull
-  cm = commit -m
+	cm = commit -m
+	c = commit
   st = status
-  ls = ls-tree --full-tree -r --name-only HEAD
-
- 
+	ls = ls-tree --full-tree -r --name-only HEAD
+	d = diff
+	
+	# amend the currently staged files to last commit
+	amend = commit --amend --reuse-message=HEAD
   ba = branch --all
   ca = !git add -A && git commit -av

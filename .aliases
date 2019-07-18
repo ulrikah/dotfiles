@@ -28,7 +28,9 @@ alias .4='cd ../../../../'                  # Go back 4 directory levels
 alias .5='cd ../../../../../'               # Go back 5 directory levels
 alias .6='cd ../../../../../../'            # Go back 6 directory levels
 alias prog='cd ~/programming'
-alias bl='cd ~/blank'
+alias bl='cd ~/blank/prosjekt'
+alias desk='cd ~/Desktop'
+alias dl='cd ~/Downloads'
 
 alias python=python3
 alias pip=pip3
