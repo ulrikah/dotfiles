@@ -28,6 +28,7 @@ alias .4='cd ../../../../'                  # Go back 4 directory levels
 alias .5='cd ../../../../../'               # Go back 5 directory levels
 alias .6='cd ../../../../../../'            # Go back 6 directory levels
 alias prog='cd ~/programming'
+alias br='cd ~/breach'
 alias bl='cd ~/blank/prosjekt'
 alias desk='cd ~/Desktop'
 alias dl='cd ~/Downloads'
@@ -50,6 +51,7 @@ alias sbpr='source ~/dotfiles/.bash_profile'
 alias bpr='vim ~/dotfiles/.bash_profile'
 alias als='vim ~/dotfiles/.aliases'
 alias func='vim ~/dotfiles/.functions'
+alias gcfg='vim ~/dotfiles/.gcfg'
 
 # misc
 alias week='date +%V'
