@@ -26,4 +26,6 @@
 	# amend the currently staged files to last commit
 	amend = commit --amend --reuse-message=HEAD
   ba = branch --all
-  ca = !git add -A && git commit -av
+	ca = !git add -A && git commit -av # stage all changes and enter interactive commit mode
+	f = log --follow -p --
+	cl = clone

@@ -12,7 +12,7 @@ cd()
 	builtin cd "$@" && ls -U |head -5
 }
 
-# usage: hex2rbg "#FFAABB"
+# usage: hex2rgb "#FFAABB"
 hex2rgb() {
     hex=$(echo "${1^^}" | sed 's/#//g')
 
@@ -24,10 +24,19 @@ hex2rgb() {
     g=$(echo "ibase=16; $b" | bc)
     b=$(echo "ibase=16; $c" | bc)
 
-    echo \($r, $g, $b\)
+    echo "($r, $g, $b)"
 }
 
 
-# TO DO: make this into a function
-# script to convert an input .flac file to a 320 kbps .mp3 file
-# ffmpeg -i input.flac -ab 320k -map_metadata 0 -id3v2_version 3 output.mp3
+# convert an input .flac file to a 320 kbps .mp3 file
+flac2mp3() {
+	ffmpeg -i "$1" -ab 320k -map_metadata 0 -id3v2_version 3 "${1%.flac}".mp3
+}
+
+stripspace(){
+	for f in *\ *; do mv "$f" "${f// /_}"; done
+}
+
+mov2gif(){
+	ffmpeg -i "$1" -pix_fmt rgb8 -r 8 -vf scale=-1:640 "${1%.mov}".gif
+}
