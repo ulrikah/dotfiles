@@ -4,7 +4,11 @@
 
 cd "$(dirname "${BASH_SOURCE}")";
 
-# git pull origin master;
+if [[ $* == *--pull* ]]
+then
+	echo "Pulling dotfiles from master branch";
+	git pull origin master
+fi
 
 function doIt() {
 	rsync --exclude ".git/" \
