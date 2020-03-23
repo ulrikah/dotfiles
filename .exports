@@ -1,6 +1,16 @@
 #!/usr/bin/env bash
 
+export PATH="$HOME/bin:$PATH"
+# export PATH='/Users/ulrikah/Library/Android/sdk/platform-tools:$PATH'
+
+# user anaconda dir
+export PATH="$HOME/opt/anaconda3/bin:$PATH"
+
+# ruby
 export GEM_HOME=$HOME/gems
 export PATH=$HOME/gems/bin:$PATH
 export PATH="$HOME/.rbenv/shims:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
+
+# language
+export LC_ALL="en_US.UTF-8"
