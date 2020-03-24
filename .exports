@@ -6,6 +6,8 @@ export PATH="$HOME/bin:$PATH"
 # user anaconda dir
 export PATH="$HOME/opt/anaconda3/bin:$PATH"
 
+export PATH="/usr/local/bin:$PATH"
+
 # ruby
 export GEM_HOME=$HOME/gems
 export PATH=$HOME/gems/bin:$PATH
