@@ -16,3 +16,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 
 # language
 export LC_ALL="en_US.UTF-8"
+
+# colors
+export LSCOLORS="exfxcxdxbxegedabagacad"
