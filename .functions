@@ -27,6 +27,11 @@ hex2rgb() {
     echo "($r, $g, $b)"
 }
 
+# copy last recently updated file
+cplru(){
+	cp -p "`ls -dtr1 $1/* | tail -1`" $2
+}
+
 
 # convert an input .flac file to a 320 kbps .mp3 file
 flac2mp3() {

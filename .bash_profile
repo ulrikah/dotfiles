@@ -5,7 +5,7 @@
 
 # load the shell dotfiles
 # remember to not use space between filenames
-for file in ~/dotfiles/.{aliases,functions,exports,local_aliases}; do
+for file in ~/dotfiles/.{aliases,functions,exports,*.local}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 
