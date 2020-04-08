@@ -52,8 +52,6 @@ alias py2=python2.6
 alias pya=python3.6 # dirty hack to get Anaconda version 
 alias cpwd='pwd | tr -d "\r\n" | pbcopy'
 alias hgrep='history | grep --color=auto '
-alias src='source'
-alias md='macdown'
 
 # dotfiles
 alias dotfiles='cd ~/dotfiles'
