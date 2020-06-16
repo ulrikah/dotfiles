@@ -2,6 +2,7 @@
 
 #  shortcuts
 alias chrome="open -a 'Google Chrome.app' --args --disable-web-security"
+alias spotify="open -a 'Spotify.app'"
 alias pure="open /Applications/Pd-0.50-0.app/"
 alias vpn="/opt/cisco/anyconnect/bin/vpn connect vpn.ntnu.no"
 alias vpnd="/opt/cisco/anyconnect/bin/vpn disconnect"
@@ -61,7 +62,7 @@ alias sbrc='source ~/dotfiles/.bashrc'
 alias sbpr='source ~/dotfiles/.bash_profile'
 alias bpr='vim ~/dotfiles/.bash_profile'
 alias als='vim ~/dotfiles/.aliases'
-alias lals='vim ~/dotfiles/.local_aliases'
+alias lals='vim ~/dotfiles/.aliases.local'
 alias func='vim ~/dotfiles/.functions'
 alias gcfg='vim ~/dotfiles/.gitconfig'
 

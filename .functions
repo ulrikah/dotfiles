@@ -32,6 +32,12 @@ cplru(){
 	cp -p "`ls -dtr1 $1/* | tail -1`" $2
 }
 
+# mv last recently updated file
+mvlru(){
+	mv "`ls -dtr1 $1/* | tail -1`" $2
+}
+
+
 
 # convert an input .flac file to a 320 kbps .mp3 file
 flac2mp3() {
@@ -44,4 +50,8 @@ stripspace(){
 
 mov2gif(){
 	ffmpeg -i "$1" -pix_fmt rgb8 -r 8 -vf scale=-1:640 "${1%.mov}".gif
+}
+
+ffmcomp(){
+	ffmpeg -i "$1" -b 800k "${1%.*}"_compressed.mp4
 }
