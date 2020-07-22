@@ -76,3 +76,6 @@ alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && kill
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 alias f='open -a Finder ./' # opens dir in Finder
 
+alias dc='docker-compose'
+alias k='kubectl'
+alias kc='kubectx'
