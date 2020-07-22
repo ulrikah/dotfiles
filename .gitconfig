@@ -9,6 +9,7 @@
 
 [alias]
   # "Long" Logs - render's the log with high signal and low noise
+  l = log --oneline
   ll = log \
   --graph \
   --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an - %cr)' \
@@ -29,4 +30,5 @@
 	ca = !git add -A && git commit -av # stage all changes and enter interactive commit mode
 	f = log --follow -p --
 	cl = clone
-	dbr = branch | grep -v "master" | xargs git branch -D
+	bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs git branch -D; }; f"
+

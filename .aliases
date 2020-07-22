@@ -56,6 +56,7 @@ alias hgrep='history | grep --color=auto '
 
 # dotfiles
 alias dotfiles='cd ~/dotfiles'
+alias dotinstall='~/dotfiles/install.sh -f'
 alias dots='cd ~/dotfiles'
 alias brc='vim ~/dotfiles/.bashrc'
 alias sbrc='source ~/dotfiles/.bashrc'
