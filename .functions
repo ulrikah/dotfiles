@@ -12,6 +12,12 @@ cd()
 	builtin cd "$@" && ls -U |head -5
 }
 
+# sorts files and dirs by human readable size
+ds()
+{
+	du -hs $@ |sort -h
+}
+
 # usage: hex2rgb "#FFAABB"
 hex2rgb() {
     hex=$(echo "${1^^}" | sed 's/#//g')
