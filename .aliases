@@ -15,6 +15,7 @@ alias pyvenv='python3.7 -m venv'
 alias du='du -h' # default flag is human readable
 alias empty_trash='rm -rf ~/.Trash/*' # MacOS clear trash
 alias approve='spctl --add --label "Approved"' # put an approved label to the specified .app
+alias space='df -kh .'
 
 # search
 alias grep='grep --color'
@@ -77,6 +78,12 @@ alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && kill
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 alias f='open -a Finder ./' # opens dir in Finder
 
+# docker
 alias dc='docker-compose'
+
+# kubernetes
 alias k='kubectl'
 alias kc='kubectx'
+
+# rust
+alias c='cargo'
