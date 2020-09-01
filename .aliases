@@ -11,7 +11,7 @@ alias localip='ipconfig getifaddr en0'
 alias brssh='ssh ulrik@165.227.128.215'
 alias ntnu='ssh -X -C ulrikah@login.stud.ntnu.no' # vpn is a prerequisite
 alias serve='nodemon -e html,js,py -x python3 -m http.server -b localhost' 
-alias pyvenv='python3.7 -m venv'
+alias pyvenv='python -m venv'
 alias du='du -h' # default flag is human readable
 alias empty_trash='rm -rf ~/.Trash/*' # MacOS clear trash
 alias approve='spctl --add --label "Approved"' # put an approved label to the specified .app
@@ -50,8 +50,6 @@ alias docs='cd ~/Documents'
 alias python=python3
 alias pip=pip3
 alias py=python
-alias py2=python2.6
-alias pya=python3.6 # dirty hack to get Anaconda version 
 alias cpwd='pwd | tr -d "\r\n" | pbcopy'
 alias hgrep='history | grep --color=auto '
 
