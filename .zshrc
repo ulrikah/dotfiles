@@ -103,5 +103,11 @@ if command -v pyenv 1>/dev/null 2>&1; then
 	eval "$(pyenv init -)"
 fi
 
+if [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]; then
+	. "$HOME/miniconda3/etc/profile.d/conda.sh"
+else
+	export PATH="$HOME/miniconda3/bin:$PATH"
+fi	
+
 source ~/.bash_profile
 
