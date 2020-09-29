@@ -86,3 +86,6 @@ alias kc='kubectx'
 
 # rust
 alias c='cargo'
+
+# anaconda
+alias ca='conda activate'

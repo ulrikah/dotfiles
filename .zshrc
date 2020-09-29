@@ -116,5 +116,8 @@ fpath+=~/.zfunc
 # fuck
 eval $(thefuck --alias)
 
+# rbenv
+eval "$(rbenv init -)"
+
 source ~/.bash_profile
 

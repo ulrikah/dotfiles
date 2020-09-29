@@ -1,10 +1,10 @@
 # This is Git's per-user configuration file.
 [user]
-	name = ulrikah
-	email = ulrikhalmoy@gmail.com
+  name = ulrikah
+  email = ulrikhalmoy@gmail.com
 
 [credential]
-    helper = osxkeychain
+  helper = osxkeychain
 
 
 [alias]
@@ -18,17 +18,17 @@
   br = branch
   pu = push	
   pl = pull
-	cm = commit -m
-	c = commit
-  st = status
-	ls = ls-tree --full-tree -r --name-only HEAD
-	d = diff -- ':!package-lock.json' ':!yarn.lock'
+  cm = commit -m
+  c = commit
+  st = status -uall
+  ls = ls-tree --full-tree -r --name-only HEAD
+  d = diff
 	
-	# amend the currently staged files to last commit
-	amend = commit --amend --reuse-message=HEAD
+  # amend the currently staged files to last commit
+  amend = commit --amend --reuse-message=HEAD
   ba = branch --all
-	ca = !git add -A && git commit -av # stage all changes and enter interactive commit mode
-	f = log --follow -p --
-	cl = clone
-	bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs git branch -D; }; f"
+  ca = !git add -A && git commit -av # stage all changes and enter interactive commit mode
+  f = log --follow -p --
+  cl = clone
+  bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs git branch -D; }; f"
 
