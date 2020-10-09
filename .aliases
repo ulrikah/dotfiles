@@ -48,6 +48,9 @@ alias dirt='cd ~/Library/Application\ Support/SuperCollider/downloaded-quarks/Di
 alias docs='cd ~/Documents'
 alias apps='cd /Applications/'
 
+# vim
+alias nv='nvim'
+
 alias python=python3
 alias pip=pip3
 alias py=python
