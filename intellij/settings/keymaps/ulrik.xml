@@ -1,0 +1,83 @@
+<keymap version="1" name="ulrik" parent="Mac OS X 10.5+">
+  <action id="Arrangement.Rule.Match.Condition.Move.Down" />
+  <action id="Arrangement.Rule.Match.Condition.Move.Up" />
+  <action id="CompareTwoFiles" />
+  <action id="DecrementWindowHeight" />
+  <action id="Diff.ApplyLeftSide" />
+  <action id="Diff.ApplyRightSide" />
+  <action id="Diff.ShowDiff" />
+  <action id="Diff.ShowSettingsPopup" />
+  <action id="EditSource">
+    <keyboard-shortcut first-keystroke="f4" />
+  </action>
+  <action id="EditorAddOrRemoveCaret" />
+  <action id="EditorDeleteLine">
+    <keyboard-shortcut first-keystroke="shift meta back_space" />
+  </action>
+  <action id="EditorDeleteToLineStart">
+    <keyboard-shortcut first-keystroke="meta back_space" />
+  </action>
+  <action id="EditorDuplicate">
+    <keyboard-shortcut first-keystroke="shift meta d" />
+  </action>
+  <action id="EditorMoveToPageBottom">
+    <keyboard-shortcut first-keystroke="meta down" />
+  </action>
+  <action id="EditorMoveToPageBottomWithSelection">
+    <keyboard-shortcut first-keystroke="shift meta down" />
+  </action>
+  <action id="EditorMoveToPageTop">
+    <keyboard-shortcut first-keystroke="meta up" />
+  </action>
+  <action id="EditorMoveToPageTopWithSelection">
+    <keyboard-shortcut first-keystroke="shift meta up" />
+  </action>
+  <action id="EditorSelectWord" />
+  <action id="EditorUnSelectWord" />
+  <action id="FileChooser.GotoDesktop" />
+  <action id="FindNext" />
+  <action id="IncrementWindowHeight" />
+  <action id="JumpToLastChange" />
+  <action id="MethodOverloadSwitchDown" />
+  <action id="MethodOverloadSwitchUp" />
+  <action id="MoveLineDown">
+    <keyboard-shortcut first-keystroke="alt down" />
+  </action>
+  <action id="MoveLineUp">
+    <keyboard-shortcut first-keystroke="alt up" />
+  </action>
+  <action id="MoveStatementDown" />
+  <action id="MoveStatementUp" />
+  <action id="NextEditorTab" />
+  <action id="OpenModuleSettings">
+    <keyboard-shortcut first-keystroke="f4" />
+  </action>
+  <action id="PreviousEditorTab" />
+  <action id="ReplaceInPath" />
+  <action id="ResizeToolWindowDown" />
+  <action id="ResizeToolWindowUp" />
+  <action id="SearchEverywhere.NavigateToNextGroup">
+    <keyboard-shortcut first-keystroke="page_down" />
+  </action>
+  <action id="SearchEverywhere.NavigateToPrevGroup">
+    <keyboard-shortcut first-keystroke="page_up" />
+  </action>
+  <action id="SelectNextOccurrence">
+    <keyboard-shortcut first-keystroke="meta d" />
+  </action>
+  <action id="SendEOF" />
+  <action id="ServiceView.JumpToServices">
+    <keyboard-shortcut first-keystroke="alt home" />
+  </action>
+  <action id="ShowNavBar">
+    <keyboard-shortcut first-keystroke="alt home" />
+  </action>
+  <action id="ShowSearchHistory" />
+  <action id="Vcs.EditSource">
+    <keyboard-shortcut first-keystroke="f4" />
+  </action>
+  <action id="XDebugger.JumpToSource">
+    <keyboard-shortcut first-keystroke="f4" />
+  </action>
+  <action id="openAssertEqualsDiff" />
+</keymap>
