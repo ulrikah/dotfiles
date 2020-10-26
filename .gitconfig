@@ -23,6 +23,7 @@
   st = status -uall
   ls = ls-tree --full-tree -r --name-only HEAD
   d = diff
+  df = diff -- ':!package-lock.json' ':!yarn.lock'
 	
   # amend the currently staged files to last commit
   amend = commit --amend --reuse-message=HEAD
