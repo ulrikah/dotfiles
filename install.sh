@@ -15,6 +15,7 @@ function doIt() {
 		--exclude ".DS_Store" \
 		--exclude "install.sh" \
 		--exclude "README.md" \
+		--exclude "fonts" \
 		-avh --no-perms . ~;
 	source ~/.bash_profile;
 }
