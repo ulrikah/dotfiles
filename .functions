@@ -61,3 +61,7 @@ mov2gif(){
 ffmcomp(){
 	ffmpeg -i "$1" -b 800k "${1%.*}"_compressed.mp4
 }
+
+png2jpg(){
+	convert -strip -interlace Plane -gaussian-blur 0.05 -quality 85% "$1" "${1%.*}"_compressed.jpg
+}
