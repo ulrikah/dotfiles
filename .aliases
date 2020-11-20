@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #  shortcuts
-alias chrome="open -a 'Google Chrome.app' --args --disable-web-security"
+alias chrome="open -a 'Google Chrome.app' --args --disable-web-security --auto-open-devtools-for-tabs"
 alias spotify="open -a 'Spotify.app'"
 alias pure="open /Applications/Pd-0.50-0.app/"
 alias vpn="/opt/cisco/anyconnect/bin/vpn connect vpn.ntnu.no"
