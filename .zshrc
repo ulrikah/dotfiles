@@ -119,5 +119,8 @@ eval $(thefuck --alias)
 # rbenv
 eval "$(rbenv init -)"
 
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 source ~/.bash_profile
 
