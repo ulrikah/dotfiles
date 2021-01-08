@@ -93,3 +93,6 @@ alias cnd='conda deactivate'
 
 # csound
 alias csd='csound'
+
+# poetry
+alias p='poetry'
