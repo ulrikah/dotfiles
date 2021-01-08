@@ -6,3 +6,4 @@ tree
 wget
 neovim
 fzf
+fd

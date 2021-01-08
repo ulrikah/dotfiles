@@ -18,7 +18,7 @@ function doIt() {
 		--exclude "fonts" \
 		--exclude "homebrew-formulas" \
 		--exclude "intellij" \
-		--exlucde "vscode"
+		--exclude "vscode" \
 		-avh --no-perms . ~;
 	source ~/.zshrc;
 }
