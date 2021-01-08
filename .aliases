@@ -90,3 +90,6 @@ alias kc='kubectx'
 # anaconda
 alias cna='conda activate'
 alias cnd='conda deactivate'
+
+# csound
+alias csd='csound'

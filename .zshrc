@@ -8,6 +8,7 @@ export ZSH="/Users/ulrikah/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# ZSH_THEME="typewritten" # https://github.com/reobin/typewritten
 ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
@@ -122,5 +123,8 @@ eval "$(rbenv init -)"
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+export PATH="$HOME/.poetry/bin:$PATH"
+
 source ~/.bash_profile
+
 
