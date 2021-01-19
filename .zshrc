@@ -127,6 +127,9 @@ eval "$(rbenv init -)"
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# sdkman
+[ -e "$HOME/.sdkman/bin/sdkman-init.sh" ] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
 source ~/.bash_profile
 
 
