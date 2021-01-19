@@ -69,3 +69,7 @@ png2jpg(){
 dequarantine(){
 	sudo xattr -r -d com.apple.quarantine $@
 }
+
+idea () {
+	open -na "IntelliJ IDEA.app" --args "$@"
+}
