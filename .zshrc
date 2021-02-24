@@ -115,6 +115,9 @@ fi
 # make poetry available
 export PATH="$HOME/.poetry/bin:$PATH"
 
+# make go available
+export PATH="/usr/local/go/bin:$PATH"
+
 # tab completion for poetry
 fpath+=~/.zfunc
 
@@ -129,6 +132,13 @@ eval "$(rbenv init -)"
 
 # sdkman
 [ -e "$HOME/.sdkman/bin/sdkman-init.sh" ] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# ghci
+export PATH="$HOME/.ghcup/bin:$PATH"	
+
+# supercollider
+export PATH="/Applications/SuperCollider.app/Contents/MacOS:$PATH"
+echo '. $HOME/.ghcup/env' >> "$HOME/.zshrc"
 
 source ~/.bash_profile
 

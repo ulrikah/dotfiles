@@ -9,7 +9,7 @@
 
 [alias]
   # "Long" Logs - render's the log with high signal and low noise
-  l = log --oneline
+  l = log --oneline --date=relative
   ll = log \
   --graph \
   --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an - %cr)' \

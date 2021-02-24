@@ -7,3 +7,4 @@ wget
 neovim
 fzf
 fd
+postgresql
