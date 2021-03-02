@@ -1,2 +1,0 @@
-Lombook Plugin
-com.intellij.plugins.vscodekeymap
