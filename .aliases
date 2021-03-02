@@ -44,7 +44,6 @@ alias music='cd ~/Music'
 alias fag='cd ~/fag'
 alias dl='cd ~/Downloads'
 alias trash='cd ~/.Trash'
-alias dirt='cd ~/Library/Application\ Support/SuperCollider/downloaded-quarks/Dirt-Samples/'
 alias docs='cd ~/Documents'
 alias apps='cd /Applications/'
 
