@@ -1,7 +1,9 @@
+#!/bin/bash 
+
 if ! command -v brew &> /dev/null
 then
     echo "brew not found. Installing it now 🍺"
-    curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+    bash <(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
 fi
 
 # formulae
@@ -22,6 +24,8 @@ brew install pyenv # python version manager
 brew install rbenv # ruby version manager
 brew install docker
 brew install postgresql
+brew install kubectl
+brew install kubectx
 
 brew install ffmpeg # media editing
 brew install sox # audio processing
@@ -29,5 +33,5 @@ brew install imagemagick # image processing
 
 # casks
 brew install --cask rectangle
-brew install --cask blackhole
+brew install --cask blackhole-16ch
 
