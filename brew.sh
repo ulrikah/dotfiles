@@ -26,6 +26,7 @@ brew install docker
 brew install postgresql
 brew install kubectl
 brew install kubectx
+brew install postman
 
 brew install ffmpeg # media editing
 brew install sox # audio processing
