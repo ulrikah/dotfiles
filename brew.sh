@@ -26,6 +26,7 @@ brew install postgresql
 brew install ffmpeg # media editing
 brew install sox # audio processing
 brew install imagemagick # image processing
+brew install pandoc # universal document formatting
 
 # casks
 brew install --cask rectangle
