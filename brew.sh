@@ -16,6 +16,7 @@ brew install fzf # fuzzy search
 brew install fd # alternative to find
 brew install tldr # alternative to man pages
 brew install bat # prettier cat
+brew install tig # git repo cli browser
 
 brew install node
 brew install pyenv # python version manager
