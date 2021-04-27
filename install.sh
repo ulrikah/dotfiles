@@ -16,9 +16,8 @@ function doIt() {
 		--exclude "install.sh" \
 		--exclude "README.md" \
 		--exclude "fonts" \
-		--exclude "homebrew-formulas" \
-		--exclude "intellij" \
-		--exclude "vscode" \
+		--exclude "brew.sh" \
+		--exclude "iterm/" \
 		-avh --no-perms . ~;
 	source ~/.zshrc;
 }

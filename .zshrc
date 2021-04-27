@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/ulrikah/.oh-my-zsh"
@@ -11,14 +11,11 @@ export ZSH="/Users/ulrikah/.oh-my-zsh"
 # ZSH_THEME="typewritten" # https://github.com/reobin/typewritten
 ZSH_THEME="robbyrussell"
 
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+# disable permission issues
+ZSH_DISABLE_COMPFIX=true
 
 # Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -121,9 +118,6 @@ export PATH="/usr/local/go/bin:$PATH"
 # tab completion for poetry
 fpath+=~/.zfunc
 
-# fuck
-eval $(thefuck --alias)
-
 # rbenv
 eval "$(rbenv init -)"
 
@@ -132,6 +126,13 @@ eval "$(rbenv init -)"
 
 # sdkman
 [ -e "$HOME/.sdkman/bin/sdkman-init.sh" ] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# nvm
+if [ -e "${HOME}/.nvm" ]; then
+	export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+fi
+
 
 source ~/.bash_profile
 
