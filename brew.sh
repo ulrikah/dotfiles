@@ -37,4 +37,5 @@ brew install pandoc # universal document formatting
 # casks
 brew install --cask rectangle
 brew install --cask blackhole-16ch
+brew install --cask vlc
 
