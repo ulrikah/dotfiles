@@ -17,6 +17,7 @@ alias du='du -h' # default flag is human readable
 alias empty_trash='rm -rf ~/.Trash/*' # MacOS clear trash
 alias approve='spctl --add --label "Approved"' # put an approved label to the specified .app
 alias space='df -kh .'
+alias reload='exec $SHELL -l' # reload shell
 
 # search
 alias grep='grep --color'
