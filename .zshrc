@@ -133,6 +133,8 @@ if [ -e "${HOME}/.nvm" ]; then
 	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 fi
 
+# ghcup-env
+[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" 
 
 source ~/.bash_profile
 
