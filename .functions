@@ -73,3 +73,8 @@ dequarantine(){
 idea () {
 	open -na "IntelliJ IDEA.app" --args "$@"
 }
+
+notify () {
+	# macOS specific way of getting a notify functionality
+	/usr/bin/osascript -e "display notification \"$*\" with title \"Notification\" sound name \"Hero\""
+}
