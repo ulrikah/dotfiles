@@ -12,6 +12,7 @@ brew install jq # json
 brew install tmux
 brew install neovim
 brew install wget
+brew install watch
 
 brew install tree # tree view of dirs
 brew install fzf # fuzzy search
