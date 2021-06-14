@@ -13,6 +13,8 @@ brew install tmux
 brew install neovim
 brew install wget
 brew install watch
+brew install httpie
+
 
 brew install tree # tree view of dirs
 brew install fzf # fuzzy search
