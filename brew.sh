@@ -14,6 +14,7 @@ brew install neovim
 brew install wget
 brew install watch
 brew install httpie
+brew install dust # disk space - modern alt to du
 
 
 brew install tree # tree view of dirs

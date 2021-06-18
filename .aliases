@@ -97,3 +97,6 @@ alias csd='csound'
 
 # poetry
 alias p='poetry'
+
+# dust
+alias ds='dust'
