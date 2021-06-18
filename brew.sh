@@ -14,7 +14,6 @@ brew install neovim
 brew install wget
 brew install watch
 brew install httpie
-brew install dust # disk space - modern alt to du
 
 
 brew install tree # tree view of dirs
@@ -23,6 +22,8 @@ brew install fd # alternative to find
 brew install tldr # alternative to man pages
 brew install bat # prettier cat
 brew install tig # git repo cli browser
+brew install dust # disk space - modern alt to du
+brew install delta # git diff alternative
 
 brew install node
 brew install pyenv # python version manager
