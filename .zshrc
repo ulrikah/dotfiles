@@ -99,10 +99,11 @@ source $ZSH/oh-my-zsh.sh
 #
 
 # pyenv
-eval "$(pyenv init -)"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init --path)"
+fi
 
 # miniconda
 if [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]; then
