@@ -6,6 +6,8 @@
 [credential]
   helper = osxkeychain
 
+[init]
+	defaultBranch = main
 
 [alias]
   # "Long" Logs - render's the log with high signal and low noise
@@ -50,4 +52,5 @@
 [delta "decorations"]
     commit-decoration-style = bold yellow box ul
     file-style = bold yellow ul
-    file-decoration-style = none
+	file-decoration-style = none
+
