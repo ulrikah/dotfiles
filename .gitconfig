@@ -9,6 +9,9 @@
 [init]
 	defaultBranch = main
 
+[pull]
+	rebase = false
+
 [alias]
   # "Long" Logs - render's the log with high signal and low noise
   l = log --oneline --date=relative
