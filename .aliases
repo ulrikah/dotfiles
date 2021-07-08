@@ -99,4 +99,4 @@ alias csd='csound'
 alias p='poetry'
 
 # dust
-alias ds='dust'
+alias ds='dust --no-percent-bars'

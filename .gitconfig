@@ -29,7 +29,7 @@
   ls = ls-tree --full-tree -r --name-only HEAD
   d = diff
   df = diff -- ':!package-lock.json' ':!yarn.lock'
-  uncommit = 'reset HEAD^' # remove last commit but keep changes
+  uncommit = reset HEAD^ # remove last commit but keep changes
 	
   # amend the currently staged files to last commit
   amend = commit --amend --reuse-message=HEAD
@@ -37,7 +37,8 @@
   ca = !git add -A && git commit -av # stage all changes and enter interactive commit mode
   f = log --follow -p --
   cl = clone
-  bclean = "!f() { git branch --merged ${1-main} | grep -v " ${1-main}$" | xargs git branch -D; }; f"
+	bclean = "!f() { git branch --merged ${1-main} | grep -v " ${1-main}$" | xargs git branch -D; }; f"
+  remote = remote -v
 
 [pager]
     diff = delta
@@ -49,11 +50,7 @@
     diffFilter = delta --color-only
 
 [delta]
+    light = true
     features = line-numbers decorations
     whitespace-error-style = 22 reverse
-
-[delta "decorations"]
-    commit-decoration-style = bold yellow box ul
-    file-style = bold yellow ul
-	file-decoration-style = none
 

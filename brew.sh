@@ -14,7 +14,7 @@ brew install neovim
 brew install wget
 brew install watch
 brew install httpie
-
+brew install gh # github cli
 
 brew install tree # tree view of dirs
 brew install fzf # fuzzy search
