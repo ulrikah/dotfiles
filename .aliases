@@ -17,7 +17,6 @@ alias du='du -h' # default flag is human readable
 alias empty_trash='rm -rf ~/.Trash/*' # MacOS clear trash
 alias approve='spctl --add --label "Approved"' # put an approved label to the specified .app
 alias space='df -kh .'
-alias reload='exec $SHELL -l' # reload shell
 
 # search
 alias grep='grep --color'
@@ -62,14 +61,11 @@ alias hgrep='history | grep --color=auto '
 alias dotfiles='cd ~/dotfiles'
 alias dotinstall='~/dotfiles/install.sh -f'
 alias dots='cd ~/dotfiles'
-alias brc='vim ~/dotfiles/.bashrc'
-alias sbrc='source ~/dotfiles/.bashrc'
-alias sbpr='source ~/dotfiles/.bash_profile'
-alias bpr='vim ~/dotfiles/.bash_profile'
 alias als='vim ~/dotfiles/.aliases'
 alias lals='vim ~/dotfiles/.aliases.local'
 alias func='vim ~/dotfiles/.functions'
 alias gcfg='vim ~/dotfiles/.gitconfig'
+alias reload='source ~/dotfiles/.zshrc; exec $SHELL -l' # reload shell
 
 # misc
 alias week='date +%V'

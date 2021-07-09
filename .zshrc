@@ -24,8 +24,6 @@ COMPLETION_WAITING_DOTS="true"
 # zsh plugins
 plugins=(git zsh-autosuggestions npm docker colored-man-pages)
 
-source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 # You may need to manually set your language environment
@@ -83,5 +81,5 @@ fi
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" 
 
 source ~/.bash_profile
-
+source $ZSH/oh-my-zsh.sh
 
