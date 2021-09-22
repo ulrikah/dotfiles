@@ -72,3 +72,26 @@ notify () {
 	# macOS specific way of getting a notify functionality
 	/usr/bin/osascript -e "display notification \"$*\" with title \"Notification\" sound name \"Hero\""
 }
+
+coauthors()
+{
+    if [[ $# -eq 0 ]] ; then
+        echo -e "usage: coauthors search_terms..."
+        return
+    fi
+    local all_authors=$(git log | sed -nE "s/.*uthor.*: (.*)/\1/p" | sort | uniq -c | sort -nr)
+
+    local result=""
+    for search_term in "$@"; do
+        if author=$(echo "$all_authors"| grep $search_term | head -n1 | sed -nE "s/.*[[:digit:]]+ (.*)/\1/p"); then
+            if [ -z "$result" ]; then
+                result=$'Co-authored-by: '$author
+            else
+                result=$result$'\n'$'Co-authored-by: '$author
+            fi
+        fi
+    done
+
+    echo "$result" | pbcopy
+    echo "$result"
+}
