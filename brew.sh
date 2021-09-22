@@ -24,6 +24,7 @@ brew install bat # prettier cat
 brew install tig # git repo cli browser
 brew install dust # disk space - modern alt to du
 brew install delta # git diff alternative
+brew install ripgrep # modern alt to grep
 
 brew install node
 brew install pyenv # python version manager
