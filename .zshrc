@@ -81,5 +81,11 @@ fi
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" 
 
 source ~/.bash_profile
+
+# load the shell dotfiles
+# remember to not use space between filenames
+for file in ~/dotfiles/.{aliases,functions,exports,*.local}; do
+        [ -r "$file" ] && [ -f "$file" ] && source "$file";
+
 source $ZSH/oh-my-zsh.sh
 
