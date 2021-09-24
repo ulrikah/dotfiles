@@ -59,9 +59,6 @@ export PATH="$HOME/.poetry/bin:$PATH"
 # make go available
 export PATH="/usr/local/go/bin:$PATH"
 
-# tab completion for poetry
-fpath+=~/.zfunc
-
 # rbenv
 eval "$(rbenv init -)"
 
@@ -73,8 +70,8 @@ eval "$(rbenv init -)"
 
 # nvm
 if [ -e "${HOME}/.nvm" ]; then
-	export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+    export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 fi
 
 # ghcup-env
@@ -85,7 +82,7 @@ source ~/.bash_profile
 # load the shell dotfiles
 # remember to not use space between filenames
 for file in ~/dotfiles/.{aliases,functions,exports,*.local}; do
-        [ -r "$file" ] && [ -f "$file" ] && source "$file";
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
 
 source $ZSH/oh-my-zsh.sh
 

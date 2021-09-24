@@ -98,5 +98,5 @@ alias p='poetry'
 alias ds='dust --no-percent-bars'
 
 # ripgrep
-# by default include hidden files, but not .git
-alias rg="rg --hidden '!.git'"
+# by default include hidden files
+alias rg='rg --hidden'
