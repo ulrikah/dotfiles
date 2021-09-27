@@ -83,6 +83,7 @@ source ~/.bash_profile
 # remember to not use space between filenames
 for file in ~/dotfiles/.{aliases,functions,exports,*.local}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
 
 source $ZSH/oh-my-zsh.sh
 
