@@ -1,6 +1,6 @@
 # This is Git's per-user configuration file.
 [user]
-  name = ulrikah
+  name = Ulrik Antoniussen Halmøy
   email = ulrikhalmoy@gmail.com
 
 [credential]
@@ -38,7 +38,8 @@
   f = log --follow -p --
   cl = clone
 	bclean = "!f() { git branch --merged ${1-main} | grep -v " ${1-main}$" | xargs git branch -D; }; f"
-  remote = remote -v
+	remote = remote -v
+	wip = !git add . && git commit -nm "WIP" # write up a WIP commit
 
 [pager]
     diff = delta
