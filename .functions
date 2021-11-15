@@ -95,3 +95,7 @@ coauthors()
     echo "$result" | pbcopy
     echo "$result"
 }
+
+js() {
+	osascript -l 'JavaScript' -e "$@"
+}
