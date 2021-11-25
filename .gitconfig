@@ -51,7 +51,7 @@
     diffFilter = delta --color-only
 
 [delta]
-    light = true
+    light = false
     features = line-numbers decorations
     whitespace-error-style = 22 reverse
 
