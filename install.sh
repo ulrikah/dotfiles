@@ -16,7 +16,7 @@ function doIt() {
 		--exclude "install.sh" \
 		--exclude "README.md" \
 		--exclude "fonts" \
-		--exclude "brew.sh" \
+		--exclude "brew/" \
 		--exclude "iterm/" \
 		-avh --no-perms . ~;
 	source ~/.zshrc;
