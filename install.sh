@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#! /bin/zsh
 
 # copied from https://github.com/mathiasbynens/dotfiles/blob/master/bootstrap.sh
 

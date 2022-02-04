@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/zsh
 
 # language
 export LC_ALL="en_US.UTF-8"
@@ -8,3 +8,9 @@ export LSCOLORS="exfxcxdxbxegedabagacad"
 
 # deno
 export DENO_DIR="$HOME/.cache/deno"
+
+# colima
+export DOCKER_HOST=unix://$HOME/.colima/docker.sock
+export DOCKER_CONTEXT=colima
+export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+export TESTCONTAINERS_HOST_OVERRIDE=0.0.0.0

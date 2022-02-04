@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/zsh
 
 #  shortcuts
 alias chrome="open -a 'Google Chrome.app' --args --disable-web-security --auto-open-devtools-for-tabs"
