@@ -64,9 +64,6 @@ export PATH="/usr/local/go/bin:$PATH"
 # rbenv
 eval "$(rbenv init -)"
 
-# fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # sdkman
 [ -e "$HOME/.sdkman/bin/sdkman-init.sh" ] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
@@ -88,4 +85,10 @@ for file in ~/dotfiles/.{aliases,functions,exports,*.local}; do
 done;
 
 source $ZSH/oh-my-zsh.sh
+
+# fzf
+# has to come after the oh-my-zsh sourcing for some reason
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
 
