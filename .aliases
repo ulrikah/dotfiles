@@ -59,7 +59,7 @@ alias hgrep='history | grep --color=auto '
 
 # dotfiles
 alias dotfiles='cd ~/dotfiles'
-alias dotinstall='~/dotfiles/install.sh -f'
+alias dotinstall='cd ~/dotfiles && ./install.sh -f && cd -'
 alias dots='cd ~/dotfiles'
 alias als='vim ~/dotfiles/.aliases'
 alias lals='vim ~/dotfiles/.aliases.local'
