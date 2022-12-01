@@ -24,7 +24,13 @@ HYPHEN_INSENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"
 
 # zsh plugins
-plugins=(git zsh-autosuggestions npm docker colored-man-pages)
+plugins=(
+    git
+    zsh-autosuggestions # https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+    npm
+    docker
+    colored-man-pages
+)
 
 # User configuration
 
