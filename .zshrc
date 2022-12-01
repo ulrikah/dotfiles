@@ -76,6 +76,8 @@ fi
 # ghcup-env
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" 
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 source ~/.bash_profile
 
 # load the shell dotfiles
@@ -89,6 +91,4 @@ source $ZSH/oh-my-zsh.sh
 # fzf
 # has to come after the oh-my-zsh sourcing for some reason
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-
 
