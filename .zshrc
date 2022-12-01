@@ -75,7 +75,6 @@ fi
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-source ~/.bash_profile
 
 # load the shell dotfiles
 # remember to not use space between filenames
