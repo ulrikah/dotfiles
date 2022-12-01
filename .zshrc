@@ -9,6 +9,13 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 export ZSH_THEME="typewritten/typewritten"
+# typewritten theme: https://typewritten.dev/#/installation?id=oh-my-zsh
+export ZSH_THEME="typewritten/typewritten"
+export TYPEWRITTEN_PROMPT_LAYOUT="singleline"
+export TYPEWRITTEN_CURSOR="beam"
+export TYPEWRITTEN_RELATIVE_PATH="adaptive"
+export TYPEWRITTEN_SYMBOL=">" # ﺣ ᓗ ފ
+export TYPEWRITTEN_COLOR_MAPPINGS="primary:magenta;secondary:blue"
 
 # disable permission issues
 ZSH_DISABLE_COMPFIX=true

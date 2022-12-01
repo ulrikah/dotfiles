@@ -102,12 +102,4 @@ alias ds='dust --no-percent-bars'
 # by default include hidden files
 alias rg='rg --hidden'
 
-# zsh 
-# typewritten theme: https://typewritten.dev/#/installation?id=oh-my-zsh
-ZSH_THEME="typewritten/typewritten"
-TYPEWRITTEN_PROMPT_LAYOUT="singleline"
-TYPEWRITTEN_CURSOR="beam"
-TYPEWRITTEN_RELATIVE_PATH="adaptive"
-TYPEWRITTEN_SYMBOL="->" # ﺣ ᓗ ފ
-TYPEWRITTEN_COLOR_MAPPINGS="primary:magenta;secondary:blue"
 
