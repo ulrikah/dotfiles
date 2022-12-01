@@ -61,9 +61,6 @@ export PATH="$HOME/.poetry/bin:$PATH"
 # make go available
 export PATH="/usr/local/go/bin:$PATH"
 
-# rbenv
-eval "$(rbenv init -)"
-
 # sdkman
 [ -e "$HOME/.sdkman/bin/sdkman-init.sh" ] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
