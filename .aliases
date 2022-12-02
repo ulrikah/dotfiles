@@ -4,13 +4,8 @@
 alias chrome="open -a 'Google Chrome.app' --args --disable-web-security --auto-open-devtools-for-tabs"
 alias spotify="open -a 'Spotify.app'"
 alias pure="open /Applications/Pd-0.50-0.app/"
-alias vpn="/opt/cisco/anyconnect/bin/vpn connect vpn.ntnu.no"
-alias vpn_uio="/opt/cisco/anyconnect/bin/vpn connect vpn.uio.no"
-alias vpnd="/opt/cisco/anyconnect/bin/vpn disconnect"
 alias myip='curl ifconfig.co' # append -6 or -4 for IPv6 / IPv4
 alias localip='ipconfig getifaddr en0'
-alias brssh='ssh ulrik@165.227.128.215'
-alias ntnu='ssh -X -C ulrikah@login.stud.ntnu.no' # vpn is a prerequisite
 alias serve='nodemon -e html,js,py -x python3 -m http.server -b localhost' 
 alias pyvenv='python -m venv'
 alias du='du -h' # default flag is human readable
