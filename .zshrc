@@ -54,6 +54,9 @@ fi
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# init homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -86,7 +89,6 @@ fi
 # ghcup-env
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" 
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # fzf
 # has to come after the oh-my-zsh sourcing for some reason
