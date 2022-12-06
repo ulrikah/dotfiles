@@ -90,10 +90,6 @@ fi
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" 
 
 
-# fzf
-# has to come after the oh-my-zsh sourcing for some reason
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # load the shell dotfiles
 # remember to not use space between filenames
 for file in ~/dotfiles/.{aliases,functions,exports,*.local}; do
@@ -101,4 +97,9 @@ for file in ~/dotfiles/.{aliases,functions,exports,*.local}; do
 done;
 
 source $ZSH/oh-my-zsh.sh
+
+# fzf
+# has to come after the oh-my-zsh sourcing for some reason
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 
