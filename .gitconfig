@@ -56,4 +56,7 @@
     whitespace-error-style = 22 reverse
 
 [includeIf "gitdir:~/nav/"]
-    path = ~/nav/.gitconfig-nav
+   path = ~/nav/.gitconfig-nav
+
+[push]
+	autoSetupRemote = true
