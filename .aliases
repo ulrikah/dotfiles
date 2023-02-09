@@ -73,6 +73,7 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 alias f='open -a Finder ./' # opens dir in Finder
 
 # docker
+alias d='docker'
 alias dc='docker-compose'
 
 # kubernetes
