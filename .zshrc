@@ -2,6 +2,9 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Add $HOME/.local/bin to path
+export PATH=$HOME/.local/bin:$PATH
+
 # zsh path
 export ZSH="$HOME/.oh-my-zsh"
 
