@@ -82,6 +82,9 @@ export PATH="/usr/local/go/bin:$PATH"
 # sdkman
 [ -e "$HOME/.sdkman/bin/sdkman-init.sh" ] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+# make rust available
+export PATH="$HOME/.cargo/env:$PATH"
+
 # nvm
 if [ -e "${HOME}/.nvm" ]; then
     export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
