@@ -6,8 +6,8 @@ cd "$(dirname "${BASH_SOURCE}")";
 
 if [[ $* == *--pull* ]]
 then
-	echo "Pulling dotfiles from master branch";
-	git pull origin master
+	echo "Pulling dotfiles origin";
+	git pull origin main
 fi
 
 function doIt() {
