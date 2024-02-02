@@ -73,7 +73,7 @@ idea () {
 }
 
 pycharm () {
-	open -na "PyCharm.app" --args "$@"	
+	open -na "PyCharm CE.app" --args "$@"	
 }
 
 notify () {
