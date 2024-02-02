@@ -98,4 +98,4 @@ alias ds='dust --no-percent-bars'
 # by default include hidden files
 alias rg='rg --hidden'
 
-
+alias adb="/opt/homebrew/share/android-commandlinetools/platform-tools/adb"
