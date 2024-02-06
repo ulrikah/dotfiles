@@ -55,9 +55,6 @@
     features = line-numbers decorations
     whitespace-error-style = 22 reverse
 
-[includeIf "gitdir:~/dev/"]
-   path = ~/dev/.gitconfig-ntb
-
 [push]
 	autoSetupRemote = true
 [core]
