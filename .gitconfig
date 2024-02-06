@@ -59,3 +59,6 @@
 	autoSetupRemote = true
 [core]
 	autocrlf = input
+
+[diff]
+	submodule = log
