@@ -97,7 +97,7 @@ fi
 # sdkman
 export SDKMAN_DIR=$(brew --prefix sdkman-cli)/libexec
 [[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
-export JAVA_HOME="/opt/homebrew/opt/sdkman-cli/libexec/candidates/java/current/bin/java"
+export JAVA_HOME="/opt/homebrew/opt/sdkman-cli/libexec/candidates/java/current/"
 
 # android
 if [ -e "${HOMEBREW_PREFIX}/share/android-commandlinetools" ]; then
