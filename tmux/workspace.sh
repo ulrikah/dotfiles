@@ -31,5 +31,5 @@ then
   cd -
 fi
 
-tmux attach-session -t $TMUX_SESSION_NAME:0;
+tmux attach-session -t $TMUX_SESSION_NAME:0.0;
 
