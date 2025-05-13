@@ -20,7 +20,7 @@ then
   tmux send-keys -t "nb.1" "cd $HOME/dev/nb" C-m "clear" C-m
 
   tmux new-window -t $TMUX_SESSION_NAME:1 -n "bobler"
-  tmux send-keys -t "bobler" "cd $HOME/Documents/bobler" C-m
+  tmux send-keys -t "bobler" "cd $HOME/Documents/bobler" C-m "clear" C-m
 
   tmux new-window -t $TMUX_SESSION_NAME:2 -n "top"
   tmux send-keys -t "top" "btop" C-m
