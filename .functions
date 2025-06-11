@@ -2,14 +2,13 @@
 
 mkcd()
 {
-        mkdir -p -- "$1" &&
-                  cd -P -- "$1"
+    mkdir -p -- "$1" && cd -P -- "$1"
 }
 
 # cd does auto 'ls' with top five elements
 cd()
 {
-	builtin cd "$@" && ls -U |head -5
+    builtin cd "$@" && ls -U |head -5
 }
 
 # usage: hex2rgb "#FFAABB"
@@ -29,56 +28,56 @@ hex2rgb() {
 
 # copy last recently updated file
 cplru(){
-	cp -p "`ls -dtr1 $1/* | tail -1`" $2
+    cp -p "`ls -dtr1 $1/* | tail -1`" $2
 }
 
 # mv last recently updated file
 mvlru(){
-	mv "`ls -dtr1 $1/* | tail -1`" $2
+    mv "`ls -dtr1 $1/* | tail -1`" $2
 }
 
 
 
 # convert an input .flac file to a 320 kbps .mp3 file
 flac2mp3() {
-	ffmpeg -i "$1" -ab 320k -map_metadata 0 -id3v2_version 3 "${1%.flac}".mp3
+    ffmpeg -i "$1" -ab 320k -map_metadata 0 -id3v2_version 3 "${1%.flac}".mp3
 }
 
 wav2mp3() {
-	ffmpeg -i "$1" -ac 2 -ar 44100 "${1%.wav}".mp3
+    ffmpeg -i "$1" -ac 2 -ar 44100 "${1%.wav}".mp3
 }
 
 stripspace(){
-	for f in *\ *; do mv "$f" "${f// /_}"; done
+    for f in *\ *; do mv "$f" "${f// /_}"; done
 }
 
 mov2gif(){
-	ffmpeg -i "$1" -pix_fmt rgb8 -r 8 -vf scale=-1:640 "${1%.mov}".gif
+    ffmpeg -i "$1" -pix_fmt rgb8 -r 8 -vf scale=-1:640 "${1%.mov}".gif
 }
 
 ffmcomp(){
-	ffmpeg -i "$1" -b 800k "${1%.*}"_compressed.mp4
+    ffmpeg -i "$1" -b 800k "${1%.*}"_compressed.mp4
 }
 
 png2jpg(){
-	convert -strip -interlace Plane -gaussian-blur 0.05 -quality 85% "$1" "${1%.*}"_compressed.jpg
+    convert -strip -interlace Plane -gaussian-blur 0.05 -quality 85% "$1" "${1%.*}"_compressed.jpg
 }
 
 dequarantine(){
-	sudo xattr -r -d com.apple.quarantine $@
+    sudo xattr -r -d com.apple.quarantine $@
 }
 
 idea () {
-	open -na "IntelliJ IDEA.app" --args "$@"
+    open -na "IntelliJ IDEA.app" --args "$@"
 }
 
 pycharm () {
-	open -na "PyCharm CE.app" --args "$@"	
+    open -na "PyCharm CE.app" --args "$@"   
 }
 
 notify () {
-	# macOS specific way of getting a notify functionality
-	/usr/bin/osascript -e "display notification \"$*\" with title \"Notification\" sound name \"Hero\""
+    # macOS specific way of getting a notify functionality
+    /usr/bin/osascript -e "display notification \"$*\" with title \"Notification\" sound name \"Hero\""
 }
 
 coauthors()
@@ -105,5 +104,5 @@ coauthors()
 }
 
 js() {
-	osascript -l 'JavaScript' -e "$@"
+    osascript -l 'JavaScript' -e "$@"
 }
