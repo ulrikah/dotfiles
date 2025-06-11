@@ -19,14 +19,16 @@ then
   tmux send-keys -t "nb.0" "cd $HOME/dev/nb" C-m "clear" C-m
   tmux send-keys -t "nb.1" "cd $HOME/dev/nb" C-m "clear" C-m
 
-  tmux new-window -t $TMUX_SESSION_NAME:1 -n "bobler"
-  tmux send-keys -t "bobler" "cd $HOME/Documents/bobler" C-m "clear" C-m
+  tmux new-window -t $TMUX_SESSION_NAME:1 -n "misc"
+  tmux send-keys -t "misc" "cd $HOME/Documents/bobler" C-m "clear" C-m
 
   tmux new-window -t $TMUX_SESSION_NAME:2 -n "top"
   tmux send-keys -t "top" "btop" C-m
 
   tmux new-window -t $TMUX_SESSION_NAME:3 -n "dhlab"
   tmux send-keys -t "dhlab" "pyenv activate dhlab" C-m # "ipython" C-m "import dhlab as dh" C-m
+  
+  tmux new-window -t $TMUX_SESSION_NAME:3 -n "gcloud"
 
   cd -
 fi
