@@ -26,5 +26,11 @@ else
 
 	Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
+    Plug 'nvim-treesitter/nvim-treesitter', { 'branch' : 'master', 'do': ':TSUpdate' }
+
 	call plug#end()
+
+
+   lua require'nvim-treesitter.configs'.setup{ensure_installed={"python", "markdown"},highlight={enable=true}}
+
 endif
