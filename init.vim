@@ -16,7 +16,7 @@ set shiftwidth=4
 set expandtab
 
 " Color schemes (:colo)
-colorscheme habamax
+colorscheme slate
 
 if exists('g:vscode')
     " VSCode extension
