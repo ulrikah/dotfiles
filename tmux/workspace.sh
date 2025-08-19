@@ -18,17 +18,20 @@ then
   tmux split-window -h -t "nb"
   tmux send-keys -t "nb.0" "cd $HOME/dev/nb" C-m "clear" C-m
   tmux send-keys -t "nb.1" "cd $HOME/dev/nb" C-m "clear" C-m
+  
+  tmux new-window -t $TMUX_SESSION_NAME:1 -n "webdata"
+  tmux send-keys -t "webdata" "cd $HOME/dev/nb/webdata" C-m "clear" C-m "kubectx webdata.nb.no" C-m
 
-  tmux new-window -t $TMUX_SESSION_NAME:1 -n "misc"
+  tmux new-window -t $TMUX_SESSION_NAME:2 -n "misc"
   tmux send-keys -t "misc" "cd $HOME/Documents/bobler" C-m "clear" C-m
 
-  tmux new-window -t $TMUX_SESSION_NAME:2 -n "top"
+  tmux new-window -t $TMUX_SESSION_NAME:3 -n "top"
   tmux send-keys -t "top" "btop" C-m
 
-  tmux new-window -t $TMUX_SESSION_NAME:3 -n "dhlab"
+  tmux new-window -t $TMUX_SESSION_NAME:4 -n "dhlab"
   tmux send-keys -t "dhlab" "pyenv activate dhlab" C-m # "ipython" C-m "import dhlab as dh" C-m
   
-  tmux new-window -t $TMUX_SESSION_NAME:3 -n "gcloud"
+  tmux new-window -t $TMUX_SESSION_NAME:5 -n "gcloud"
 
   cd -
 fi
